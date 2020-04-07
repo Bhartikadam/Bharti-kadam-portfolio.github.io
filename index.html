@@ -34,9 +34,9 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#" target="_blank"><i class="fa fa-linkedin-square" style="font-size: 30px;"></i></a></li>
-      <li><a href="#" target="_blank"><i class="fa fa-github-square" style="font-size: 30px;"></i>https://github.com/Bhartikadam</a></li>
+      <li><a href="https://github.com/Bhartikadam" target="_blank"><i class="fa fa-github-square" style="font-size: 30px;"></i></a></li>
       <li><a href="#"><i class="fa fa-envelope" style="font-size: 30px;"></i>bharti.kadam14@gmail.com</a></li>
-       <li><a href="#"><i class="fa fa-phone" style="font-size: 30px;"></i></a>7067690611</li>
+       <li><a href="#"><i class="fa fa-phone" style="font-size: 30px;">7067690611</i></a></li>
           
       </ul>
     </div>
@@ -241,6 +241,14 @@
 			
 	</div>
 </div><!--End of container-->
+<script type="text/javascript">
+	//For auto hide button on reaching id
 
+$(document).ready(function () {
+    $("nav").find("li").on("click", "a", function(){
+        $('.navbar-collapse.in').collapse('hide');
+    });
+});
+</script>
 </body>
 </html>
